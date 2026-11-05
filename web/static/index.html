@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Server Admin</title>
+  <link rel="icon" href="icons/server.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="icons/server.svg" alt="" class="brand-icon">
+      <div>
+        <h1 id="hostname">Server Admin</h1>
+        <div class="muted small" id="subtitle">loading…</div>
+      </div>
+    </div>
+    <div class="controls">
+      <label class="toggle"><input type="checkbox" id="autorefresh" checked> auto-refresh</label>
+      <button id="refresh" type="button">Refresh</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="banner" class="banner hidden"></div>
+
+    <section>
+      <h2>Overview</h2>
+      <div class="grid" id="overview"></div>
+    </section>
+
+    <section>
+      <h2>System</h2>
+      <div class="grid" id="system"></div>
+    </section>
+
+    <section>
+      <h2>Services</h2>
+      <div class="grid" id="services"></div>
+    </section>
+
+    <section>
+      <h2>Docker</h2>
+      <div class="grid" id="docker"></div>
+    </section>
+
+    <section>
+      <h2>Databases</h2>
+      <div class="grid" id="databases"></div>
+    </section>
+
+    <section>
+      <h2>Firewall</h2>
+      <div class="grid" id="firewall"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

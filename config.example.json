@@ -1,0 +1,51 @@
+{
+  "listen": "0.0.0.0",
+  "port": 8090,
+  "auth": {
+    "username": "admin",
+    "password": "change-me"
+  },
+  "system": {
+    "enabled": true,
+    "interval_seconds": 5,
+    "mounts": []
+  },
+  "docker": {
+    "enabled": true,
+    "interval_seconds": 10,
+    "socket": "/var/run/docker.sock"
+  },
+  "mysql": {
+    "enabled": true,
+    "interval_seconds": 30,
+    "host": "127.0.0.1",
+    "port": 3306,
+    "user": "monitor",
+    "password": "",
+    "binary": "mysql"
+  },
+  "postgres": {
+    "enabled": true,
+    "interval_seconds": 30,
+    "host": "127.0.0.1",
+    "port": 5432,
+    "user": "monitor",
+    "password": "",
+    "database": "postgres",
+    "binary": "psql"
+  },
+  "iptables": {
+    "enabled": true,
+    "interval_seconds": 30,
+    "binary": "iptables",
+    "ipv6": false,
+    "binary6": "ip6tables"
+  },
+  "systemd": {
+    "enabled": true,
+    "interval_seconds": 15,
+    "binary": "systemctl",
+    "units": [],
+    "all": false
+  }
+}
